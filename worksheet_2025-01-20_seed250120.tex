@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\usepackage[UTF8,fontset=fandol]{ctex}
+\usepackage[left=0.4in,right=0.7in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{xcolor}
+
+\newcommand{\blank}{\underline{\makebox[0.6cm]{}}}
+\newcommand{\scoreblank}{\underline{\makebox[1.6cm]{}}}
+\newcommand{\qnum}[1]{\textcolor{blue}{\zihao{5}\ttfamily(#1)}}
+\newcommand{\lhs}[1]{\mbox{$#1$}}
+\newcommand{\rhs}[1]{\mbox{$#1$}}
+\newcolumntype{Q}{>{\raggedleft\arraybackslash}p{2.0em}}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{flushright}
+{\zihao{4} 日期：2025-01-20\\
+正确数：\scoreblank/30}
+\end{flushright}
+
+\begin{center}
+{\zihao{1}\textbf{十以内加减法练习}}\\[0.5em]
+\end{center}
+
+\zihao{2}
+\setlength{\tabcolsep}{0pt}
+\renewcommand{\arraystretch}{1.1}
+
+\begin{tabular}{@{}Q@{\hspace{0.6em}}r@{$=$}l@{\hspace{0.8em}}Q@{\hspace{0.6em}}r@{$=$}l@{\hspace{0.8em}}Q@{\hspace{0.6em}}r@{$=$}l@{}}
+\qnum{1} & \lhs{8+0} & \rhs{\blank} & \qnum{2} & \lhs{3+\blank} & \rhs{8} & \qnum{3} & \lhs{10-8} & \rhs{\blank} \\[0.6em]
+\qnum{4} & \lhs{10+0} & \rhs{\blank} & \qnum{5} & \lhs{4+3} & \rhs{\blank} & \qnum{6} & \lhs{6-\blank} & \rhs{3} \\[0.6em]
+\qnum{7} & \lhs{5-\blank} & \rhs{1} & \qnum{8} & \lhs{3-\blank} & \rhs{1} & \qnum{9} & \lhs{\blank+3} & \rhs{8} \\[0.6em]
+\qnum{10} & \lhs{\blank-2} & \rhs{3} & \qnum{11} & \lhs{\blank+7} & \rhs{9} & \qnum{12} & \lhs{7+1} & \rhs{\blank} \\[0.6em]
+\qnum{13} & \lhs{\blank+2} & \rhs{10} & \qnum{14} & \lhs{9-\blank} & \rhs{8} & \qnum{15} & \lhs{\blank+6} & \rhs{10} \\[0.6em]
+\qnum{16} & \lhs{\blank-8} & \rhs{1} & \qnum{17} & \lhs{1+7} & \rhs{\blank} & \qnum{18} & \lhs{5-3} & \rhs{\blank} \\[0.6em]
+\qnum{19} & \lhs{3+\blank} & \rhs{6} & \qnum{20} & \lhs{3-\blank} & \rhs{2} & \qnum{21} & \lhs{4-3} & \rhs{\blank} \\[0.6em]
+\qnum{22} & \lhs{7-3} & \rhs{\blank} & \qnum{23} & \lhs{4-\blank} & \rhs{2} & \qnum{24} & \lhs{1+\blank} & \rhs{9} \\[0.6em]
+\qnum{25} & \lhs{6+\blank} & \rhs{8} & \qnum{26} & \lhs{10-4} & \rhs{\blank} & \qnum{27} & \lhs{9-\blank} & \rhs{6} \\[0.6em]
+\qnum{28} & \lhs{7+3} & \rhs{\blank} & \qnum{29} & \lhs{7-\blank} & \rhs{1} & \qnum{30} & \lhs{\blank-5} & \rhs{4} \\
+\end{tabular}
+
+\end{document}

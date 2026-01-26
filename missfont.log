@@ -1,0 +1,2 @@
+mktexpk --mfmode / --bdpi 600 --mag 1+437/600 --dpi 1037 unihei7e
+mktexpk --mfmode / --bdpi 600 --mag 2+366/600 --dpi 1566 unihei7e

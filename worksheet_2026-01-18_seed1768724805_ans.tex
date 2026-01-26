@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage[UTF8,fontset=fandol]{ctex}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{xcolor}
+
+\newcommand{\blank}{\underline{\makebox[0.6cm]{}}}
+\newcommand{\ans}[1]{\underline{\makebox[0.6cm][c]{\textcolor{red}{\textbf{#1}}}}}
+\newcommand{\scoreblank}{\underline{\makebox[1.6cm]{}}}
+\newcommand{\qnum}[1]{\textcolor{blue}{\zihao{5}\ttfamily(#1)}}
+\newcommand{\lhs}[1]{\mbox{$#1$}}
+\newcommand{\rhs}[1]{\mbox{$#1$}}
+\newcolumntype{Q}{>{\raggedleft\arraybackslash}p{2.0em}}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{flushright}
+{\zihao{4} 日期：2026-01-18\\
+正确数：\scoreblank/20}
+\end{flushright}
+
+\begin{center}
+{\zihao{1}\textbf{答案}}\\[0.5em]
+\end{center}
+
+\zihao{2}
+\setlength{\tabcolsep}{0pt}
+\renewcommand{\arraystretch}{1.25}
+
+\begin{tabular}{@{}Q@{\hspace{0.6em}}r@{$=$}l@{\hspace{0.8em}}Q@{\hspace{0.6em}}r@{$=$}l@{\hspace{0.8em}}Q@{\hspace{0.6em}}r@{$=$}l@{}}
+\qnum{1} & \lhs{\ans{10}-0} & \rhs{10} & \qnum{2} & \lhs{1+\ans{4}} & \rhs{5} & \qnum{3} & \lhs{2-1} & \rhs{\ans{1}} \\[1.2em]
+\qnum{4} & \lhs{8+\ans{2}} & \rhs{10} & \qnum{5} & \lhs{\ans{3}+3} & \rhs{6} & \qnum{6} & \lhs{3+\ans{3}} & \rhs{6} \\[1.2em]
+\qnum{7} & \lhs{\ans{10}+0} & \rhs{10} & \qnum{8} & \lhs{\ans{2}+8} & \rhs{10} & \qnum{9} & \lhs{3+4} & \rhs{\ans{7}} \\[1.2em]
+\qnum{10} & \lhs{6-2} & \rhs{\ans{4}} & \qnum{11} & \lhs{3-\ans{1}} & \rhs{2} & \qnum{12} & \lhs{9+\ans{1}} & \rhs{10} \\[1.2em]
+\qnum{13} & \lhs{9+\ans{1}} & \rhs{10} & \qnum{14} & \lhs{\ans{5}+3} & \rhs{8} & \qnum{15} & \lhs{\ans{9}+0} & \rhs{9} \\[1.2em]
+\qnum{16} & \lhs{3+3} & \rhs{\ans{6}} & \qnum{17} & \lhs{7-\ans{0}} & \rhs{7} & \qnum{18} & \lhs{0-\ans{0}} & \rhs{0} \\[1.2em]
+\qnum{19} & \lhs{4-\ans{3}} & \rhs{1} & \qnum{20} & \lhs{4-\ans{4}} & \rhs{0} & \multicolumn{3}{@{}l@{}}{} \\
+\end{tabular}
+
+\end{document}

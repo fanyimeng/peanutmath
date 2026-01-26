@@ -1,0 +1,36 @@
+\documentclass[12pt]{article}
+\usepackage[UTF8,fontset=fandol]{ctex}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{xcolor}
+
+\newcommand{\blank}{\underline{\makebox[0.6cm]{}}}
+\newcommand{\scoreblank}{\underline{\makebox[1.6cm]{}}}
+\newcommand{\qnum}[1]{\textcolor{blue}{\zihao{5}\ttfamily(#1)}}
+\newcommand{\lhs}[1]{\mbox{$#1$}}
+\newcommand{\rhs}[1]{\mbox{$#1$}}
+\newcolumntype{Q}{>{\raggedleft\arraybackslash}p{2.0em}}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{flushright}
+{\zihao{4} 日期：2025-01-02\\
+正确数：\scoreblank/5}
+\end{flushright}
+
+\begin{center}
+{\zihao{1}\textbf{十以内加减法练习}}\\[0.5em]
+\end{center}
+
+\zihao{2}
+\setlength{\tabcolsep}{0pt}
+\renewcommand{\arraystretch}{1.25}
+
+\begin{tabular}{@{}Q@{\hspace{0.6em}}r@{$=$}l@{\hspace{0.8em}}Q@{\hspace{0.6em}}r@{$=$}l@{\hspace{0.8em}}Q@{\hspace{0.6em}}r@{$=$}l@{}}
+\qnum{1} & \lhs{\blank+4} & \rhs{4} & \qnum{2} & \lhs{2+1} & \rhs{\blank} & \qnum{3} & \lhs{\blank+1} & \rhs{10} \\[1.2em]
+\qnum{4} & \lhs{\blank+3} & \rhs{4} & \qnum{5} & \lhs{8+0} & \rhs{\blank} & \multicolumn{3}{@{}l@{}}{} \\
+\end{tabular}
+
+\end{document}

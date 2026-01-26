@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage[UTF8,fontset=fandol]{ctex}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{xcolor}
+
+\newcommand{\blank}{\underline{\makebox[0.6cm]{}}}
+\newcommand{\ans}[1]{\underline{\makebox[0.6cm][c]{\textcolor{red}{\textbf{#1}}}}}
+\newcommand{\qnum}[1]{\textcolor{blue}{\zihao{5}\ttfamily(#1)}}
+\newcommand{\lhs}[1]{\mbox{$#1$}}
+\newcommand{\rhs}[1]{\mbox{$#1$}}
+\newcolumntype{Q}{>{\raggedleft\arraybackslash}p{2.0em}}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{center}
+{\zihao{1}\textbf{答案}}\\[0.5em]
+\end{center}
+
+\zihao{2}
+\setlength{\tabcolsep}{0pt}
+\renewcommand{\arraystretch}{1.25}
+
+\begin{tabular}{@{}Q@{\hspace{0.6em}}r@{$=$}l@{\hspace{0.8em}}Q@{\hspace{0.6em}}r@{$=$}l@{\hspace{0.8em}}Q@{\hspace{0.6em}}r@{$=$}l@{}}
+\qnum{1} & \lhs{3+4} & \rhs{\ans{7}} &
+\qnum{2} & \lhs{\ans{3}+2} & \rhs{5} &
+\qnum{3} & \lhs{8-5} & \rhs{\ans{3}} \\[1.2em]
+\qnum{4} & \lhs{\ans{9}-3} & \rhs{6} &
+\qnum{5} & \lhs{6+\ans{4}} & \rhs{10} &
+\qnum{6} & \lhs{7-\ans{3}} & \rhs{4} \\[1.2em]
+\qnum{7} & \lhs{\ans{8}+1} & \rhs{9} &
+\qnum{8} & \lhs{2+\ans{4}} & \rhs{6} &
+\qnum{9} & \lhs{9-2} & \rhs{\ans{7}} \\[1.2em]
+\qnum{10} & \lhs{\ans{4}-1} & \rhs{3} &
+\qnum{11} & \lhs{5+\ans{2}} & \rhs{7} &
+\qnum{12} & \lhs{\ans{5}+3} & \rhs{8} \\[1.2em]
+\qnum{13} & \lhs{10-\ans{4}} & \rhs{6} &
+\qnum{14} & \lhs{\ans{6}-4} & \rhs{2} &
+\qnum{15} & \lhs{1+\ans{2}} & \rhs{3} \\[1.2em]
+\qnum{16} & \lhs{4+5} & \rhs{\ans{9}} &
+\qnum{17} & \lhs{\ans{7}+0} & \rhs{7} &
+\qnum{18} & \lhs{8-\ans{3}} & \rhs{5} \\[1.2em]
+\qnum{19} & \lhs{\ans{9}-2} & \rhs{7} &
+\qnum{20} & \lhs{6+\ans{3}} & \rhs{9} &
+\multicolumn{3}{@{}l@{}}{} \\
+\end{tabular}
+
+\end{document}

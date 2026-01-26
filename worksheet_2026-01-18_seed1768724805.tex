@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage[UTF8,fontset=fandol]{ctex}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{xcolor}
+
+\newcommand{\blank}{\underline{\makebox[0.6cm]{}}}
+\newcommand{\scoreblank}{\underline{\makebox[1.6cm]{}}}
+\newcommand{\qnum}[1]{\textcolor{blue}{\zihao{5}\ttfamily(#1)}}
+\newcommand{\lhs}[1]{\mbox{$#1$}}
+\newcommand{\rhs}[1]{\mbox{$#1$}}
+\newcolumntype{Q}{>{\raggedleft\arraybackslash}p{2.0em}}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{flushright}
+{\zihao{4} 日期：2026-01-18\\
+正确数：\scoreblank/20}
+\end{flushright}
+
+\begin{center}
+{\zihao{1}\textbf{十以内加减法练习}}\\[0.5em]
+\end{center}
+
+\zihao{2}
+\setlength{\tabcolsep}{0pt}
+\renewcommand{\arraystretch}{1.25}
+
+\begin{tabular}{@{}Q@{\hspace{0.6em}}r@{$=$}l@{\hspace{0.8em}}Q@{\hspace{0.6em}}r@{$=$}l@{\hspace{0.8em}}Q@{\hspace{0.6em}}r@{$=$}l@{}}
+\qnum{1} & \lhs{\blank-0} & \rhs{10} & \qnum{2} & \lhs{1+\blank} & \rhs{5} & \qnum{3} & \lhs{2-1} & \rhs{\blank} \\[1.2em]
+\qnum{4} & \lhs{8+\blank} & \rhs{10} & \qnum{5} & \lhs{\blank+3} & \rhs{6} & \qnum{6} & \lhs{3+\blank} & \rhs{6} \\[1.2em]
+\qnum{7} & \lhs{\blank+0} & \rhs{10} & \qnum{8} & \lhs{\blank+8} & \rhs{10} & \qnum{9} & \lhs{3+4} & \rhs{\blank} \\[1.2em]
+\qnum{10} & \lhs{6-2} & \rhs{\blank} & \qnum{11} & \lhs{3-\blank} & \rhs{2} & \qnum{12} & \lhs{9+\blank} & \rhs{10} \\[1.2em]
+\qnum{13} & \lhs{9+\blank} & \rhs{10} & \qnum{14} & \lhs{\blank+3} & \rhs{8} & \qnum{15} & \lhs{\blank+0} & \rhs{9} \\[1.2em]
+\qnum{16} & \lhs{3+3} & \rhs{\blank} & \qnum{17} & \lhs{7-\blank} & \rhs{7} & \qnum{18} & \lhs{0-\blank} & \rhs{0} \\[1.2em]
+\qnum{19} & \lhs{4-\blank} & \rhs{1} & \qnum{20} & \lhs{4-\blank} & \rhs{0} & \multicolumn{3}{@{}l@{}}{} \\
+\end{tabular}
+
+\end{document}
