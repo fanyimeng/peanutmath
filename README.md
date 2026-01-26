@@ -7,6 +7,12 @@ Generate printable math worksheets (addition/subtraction within 10) in LaTeX/PDF
 - Python 3
 - XeLaTeX (`xelatex`)
 
+## Directory
+
+All scripts and generated files for the within-10 addition/subtraction worksheets
+are in `within_10_add_sub/`. Run the scripts from that directory so outputs are
+written there.
+
 ## Scripts
 
 ### Single-page
@@ -14,15 +20,16 @@ Generate printable math worksheets (addition/subtraction within 10) in LaTeX/PDF
 Generate one worksheet and its answer key.
 
 ```bash
+cd within_10_add_sub
 python3 generate_worksheet.py --count 20 --date 2025-01-23 --seed 250123
 ```
 
 Outputs (examples):
 
-- `worksheet_2025-01-23_seed250123.tex`
-- `worksheet_2025-01-23_seed250123.pdf`
-- `worksheet_2025-01-23_seed250123_ans.tex`
-- `worksheet_2025-01-23_seed250123_ans.pdf`
+- `within_10_add_sub/worksheet_2025-01-23_seed250123.tex`
+- `within_10_add_sub/worksheet_2025-01-23_seed250123.pdf`
+- `within_10_add_sub/worksheet_2025-01-23_seed250123_ans.tex`
+- `within_10_add_sub/worksheet_2025-01-23_seed250123_ans.pdf`
 
 ### Multi-page
 
@@ -30,15 +37,16 @@ Generate multiple pages at once. Each page uses its page number as the RNG seed.
 The top-right label shows the page number (编号).
 
 ```bash
+cd within_10_add_sub
 python3 generate_worksheet_multipage.py --start 6 --pages 10 --count 30
 ```
 
 Outputs (examples):
 
-- `worksheet_no6-pages10-count30.tex`
-- `worksheet_no6-pages10-count30.pdf`
-- `worksheet_no6-pages10-count30_ans.tex`
-- `worksheet_no6-pages10-count30_ans.pdf`
+- `within_10_add_sub/worksheet_no6-pages10-count30.tex`
+- `within_10_add_sub/worksheet_no6-pages10-count30.pdf`
+- `within_10_add_sub/worksheet_no6-pages10-count30_ans.tex`
+- `within_10_add_sub/worksheet_no6-pages10-count30_ans.pdf`
 
 ## Notes
 
