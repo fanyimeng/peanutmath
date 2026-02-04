@@ -2,6 +2,8 @@
 
 Generate printable math worksheets (addition/subtraction within 10) in LaTeX/PDF.
 
+codex resume 019bf57e-90b5-7021-88d3-6bfef89c2a32
+
 ## Requirements
 
 - Python 3
